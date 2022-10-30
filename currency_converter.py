@@ -48,6 +48,7 @@ def RealTimeCurrencyConversion():
         new_amt = float(f"{amt:.4f}")
         Amount2_field.insert(0, str(new_amt))
 
+#define function to reset
 def clear_all():
     Amount1_field.delete(0, tk.END)
     Amount2_field.delete(0, tk.END)
@@ -117,10 +118,6 @@ Label_1.grid(row=9, column=0, sticky=W)
 #create a clear_all button and grid on row 10
 Label_9 = Button(root, font=('arial', 15, 'bold'), text="   Clear All  ", padx=2, pady=2, bg="lightblue", fg="white", command=clear_all)
 Label_9.grid(row=10, column=1)
-
-
-
-
 
 
 #launch converter GUI
